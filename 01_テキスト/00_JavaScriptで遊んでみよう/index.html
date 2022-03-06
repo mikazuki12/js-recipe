@@ -2,21 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScriptで遊んでみよう</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JSSample</title>
   </head>
   <body>
     <div id="display">ここに何かが表示される</div>
     <button id="button">クリック！</button>
 
     <script>
-      // カウンターアプリに発展させてみましょう
-
       const display = document.getElementById("display")
       const button = document.getElementById("button")
-      button.onclick = function () {
-        display.textContent = "クリックされた！！"
+      let count = 0
+    
+      button.onclick = function() {
+        count += 1
+        display.textContent = count
+        console.log(count);
       }
     </script>
   </body>
