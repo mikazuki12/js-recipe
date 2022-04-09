@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const me = {
+        name: "カズキ",
+        age: "21",
+        isMentor: false,
+        hobbies: ["サウナ", "ジョットコースター", "ホラー"],
+        university: { name: "日本大学", class: 4 },
+
+        // hobbi
+      }
+
+      // 0 表示する
+      console.log() // ① この行を書き換えて me オブジェクトをコンソールに表示させてください。
+
+      // 1 String
+      console.log(`私の名前は、${me.name}です!`) // ② この行は書き換えずに、meオブジェクトを書き換えて名前が表示されるようにしてください。
+
+      // 2 Number
+      console.log(`としは、${me.age}です!`) // ③ この行を書き換えて ○○の部分に年齢が表示されるようにしてください。
+
+      // ④ この行
+      // 3 Boolean
+      if (me.isMentor === true) {
+        console.log("私はメンターです")
+      } else if (me.isMentor === false) {
+        console.log("私はメンターではありません")
+      }
+
+      // 4 Object
+      console.log(`大学は、${me.university.name}に通っています!`)
+      console.log(`学年は、${me.university.class}年です!`)
+
+      // 5 配列
+      for (let i = 0; i < me.hobbies.length; i++) {
+        console.log(`私の趣味は${me.hobbies[i]}です`) // この行を書き換えて、趣味が1つずつ表示されるようにしてください。
+      }
+
+      // 6 関数
+      me.hello() // この行は書き換えずに、meオブジェクトを書き換えて「よろしくお願いします!」 と表示されるようにしてください。
+    </script>
+  </body>
+</html>
