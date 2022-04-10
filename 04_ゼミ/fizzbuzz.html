@@ -8,13 +8,23 @@
   </head>
   <body>
     <script>
-      const fizzBuzz = function (num) {
-        console.log(num)
+      const fizzbuzz = function (number) {
+        for (let n = 1; n <= number; n++) {
+          if (n % 15 === 0) {
+            console.log(n + "fizzbuzz")
+          } else if (n % 5 === 0) {
+            console.log(n + "buzz")
+          } else if (n % 3 === 0) {
+            console.log(n + "fizz")
+          } else {
+            console.log(n)
+          }
+        }
       }
-      fizzBuzz(100)
-      const fizzBuzz = function (num) {
-        console.log(0)
-      }
+
+      fizzbuzz(100)
+      fizzbuzz(400)
+      fizzbuzz(500)
     </script>
   </body>
 </html>
